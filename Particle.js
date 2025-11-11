@@ -1,5 +1,3 @@
-// A simple Particle class
-
 class Particle {
     constructor(position) {
         this.acceleration = createVector(0, 0.05);
@@ -28,7 +26,7 @@ display(){
 
 }
 
-IsDead(){
+isDead(){
   return this.lifespan < 0;
 }
 
