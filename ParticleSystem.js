@@ -23,4 +23,11 @@ for (let i = this.particles.length-1; i >= 0; i--) {
 
 }
 
+display() {
+        fill("orange");
+        noStroke();
+        ellipse(this.origin.x, this.origin.y-20, 10,25);
+        ellipse(this.origin.x,this.origin.y-5,10);
+    }
+
 }
