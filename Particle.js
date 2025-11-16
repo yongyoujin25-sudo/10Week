@@ -7,8 +7,14 @@ class Particle {
 }
 
 run(){
+  let gravity = createVector(0, 0.05);
+  this.applyForce(gravity);
   this.update();
   this.display();
+}
+
+applyForce(force) {
+  this.acceleration.add(force);
 }
 
 update(){
