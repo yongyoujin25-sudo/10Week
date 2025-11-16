@@ -24,10 +24,13 @@ for (let i = this.particles.length-1; i >= 0; i--) {
 }
 
 display() {
-        fill("orange");
         noStroke();
-        ellipse(this.origin.x, this.origin.y+25,20,35);
-        ellipse(this.origin.x,this.origin.y,20);
+        fill("pink");
+        ellipse(this.origin.x, this.origin.y+25,35);
+        fill(255)
+        rect(this.origin.x-7.5,this.origin.y-10,15,20);
+        fill("gray")
+        ellipse(this.origin.x,this.origin.y,7);
     }
 
 }

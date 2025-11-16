@@ -11,7 +11,9 @@ function draw() {
 
   system.setPosition(createVector(mouseX,mouseY));
 
-  system.addParticle();
+if (mouseIsPressed)
+    system.addParticle();
+
   system.run();
   system.display();
 }
